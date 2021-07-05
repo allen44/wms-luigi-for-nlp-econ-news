@@ -6,7 +6,7 @@ class ScrapeStaticWebsite(luigi.Task):
 	def requires(self):
 		return None
 
-    def run(self):
+    def run(self): 
 		# Init list of url are hard coded into nlp_utils.scrap_static_website()
 		# but the function accepts kwargs to scrap custom lists of urls
 		(self.links, 

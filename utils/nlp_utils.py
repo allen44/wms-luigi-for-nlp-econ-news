@@ -1,3 +1,36 @@
+import re
+import pickle
+import unicodedata
+import requests
+import os
+import pickle
+
+import requests_cache
+import bs4
+from bs4 import BeautifulSoup
+
+import pandas as pd
+import numpy as np
+import spacy
+
+# Load contraction map
+from contractions import CONTRACTION_MAP
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from tqdm.notebook import tqdm
+
+
+from pprint import pprint
+
+import stanza
+
+import nltk
+from nltk.tokenize.toktok import ToktokTokenizer
+import model_evaluation_utils as meu
+
+
 def scrap_static_website(**kwargs):
   # Unpack kwargs
   url_root = kwargs.get('url_root', 'https://www.prnewswire.com/news/institute-for-supply-management')

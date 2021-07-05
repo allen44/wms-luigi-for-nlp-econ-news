@@ -10,7 +10,6 @@ jupyter>=1.0.0
 matplotlib-inline>=0.1.2
 quandl>=3.6.1
 pandas-datareader>=0.9.0
-pmdarima>=1.8.2
 requests>=2.23.0
 requests-cache>=0.6.4
 retrying>=1.3.3
